@@ -1,19 +1,10 @@
-# Casts a laser along a raycast, emitting particles on the impact point.
-# Use `is_casting` to make the laser fire and stop.
-# You can attach it to a weapon or a ship; the laser will rotate with its parent.
 class_name RayoLaser
 extends RayCast2D
 
-# Speed at which the laser extends when first fired, in pixels per seconds.
 export var cast_speed := 7000.0
-# Maximum length of the laser in pixels.
 export var max_length := 1400.0
-# Base duration of the tween animation in seconds.
 export var growth_time := 0.1
 
-# If `true`, the laser is firing.
-# It plays appearing and disappearing animations when it's not animating.
-# See `appear()` and `disappear()` for more information.
 var is_casting := false setget set_is_casting
 var radio_danio:float = 4.0
 
@@ -53,9 +44,6 @@ func set_is_casting(cast: bool) -> void:
 	beam_particles.emitting = is_casting
 	casting_particles.emitting = is_casting
 
-
-# Controls the emission of particles and extends the Line2D to `cast_to` or the ray's 
-# collision point, whichever is closest.
 func cast_beam(delta: float) -> void:
 	var cast_point := cast_to
 
