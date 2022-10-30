@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Juego/Naves/Player/player_orange.png" type="Texture" id=1]
 [ext_resource path="res://Juego/Naves/Player/Player.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Juego/Naves/Player/Motor/MotorSFX.tscn" type="PackedScene" id=7]
 [ext_resource path="res://TemporalAssets/sci-fi-sounds/Audio/impactMetal_003.ogg" type="AudioStream" id=8]
 [ext_resource path="res://Juego/Naves/Player/Escudo/Escudo.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Juego/Naves/Player/CamaraPlayer.gd" type="Script" id=10]
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.0
@@ -101,6 +102,10 @@ bus = "SFX"
 position = Vector2( -0.706108, -0.581402 )
 
 [node name="CamaraPlayer" type="Camera2D" parent="."]
+current = true
+script = ExtResource( 10 )
+
+[node name="TweenZoom" type="Tween" parent="CamaraPlayer"]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
