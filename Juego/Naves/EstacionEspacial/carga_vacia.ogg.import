@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/carga_vacia.ogg-c7366820c40f3eb1bcf085806123c3f6.oggstr"
+
+[deps]
+
+source_file="res://Juego/Naves/EstacionEspacial/carga_vacia.ogg"
+dest_files=[ "res://.import/carga_vacia.ogg-c7366820c40f3eb1bcf085806123c3f6.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
