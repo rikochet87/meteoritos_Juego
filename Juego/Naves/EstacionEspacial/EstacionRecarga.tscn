@@ -51,7 +51,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 0.5, 1, 1.5, 2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.611765, 0.878431, 0.827451, 0.207843 ), Color( 0.611765, 0.878431, 0.827451, 0.254902 ), Color( 0.611765, 0.878431, 0.827451, 0.207843 ), Color( 0.611765, 0.878431, 0.827451, 0.254902 ), Color( 0.611765, 0.878431, 0.827451, 0.207843 ), Color( 0.611765, 0.878431, 0.827451, 0.254902 ) ]
+"values": [ Color( 0.611765, 0.878431, 0.803431, 0.207843 ), Color( 0.611765, 0.878431, 0.827451, 0.254902 ), Color( 0.611765, 0.878431, 0.827451, 0.207843 ), Color( 0.611765, 0.878431, 0.827451, 0.254902 ), Color( 0.611765, 0.878431, 0.827451, 0.207843 ), Color( 0.611765, 0.878431, 0.827451, 0.254902 ) ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -114,7 +114,7 @@ gravity = 1000.0
 collision_layer = 0
 
 [node name="SpriteZonaRecarga" type="Sprite" parent="AreaRecarga"]
-self_modulate = Color( 0.611765, 0.878431, 0.827451, 0.207843 )
+self_modulate = Color( 0.611765, 0.878431, 0.803431, 0.207843 )
 scale = Vector2( 35, 35 )
 texture = ExtResource( 2 )
 
